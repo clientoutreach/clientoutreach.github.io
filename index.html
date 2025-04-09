@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maroun Abdo | Cold Email Outreach Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .email-template {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">Maroun Abdo</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-all">About</a>
+                    <a href="#approach" class="text-gray-700 hover:text-blue-600 transition-all">Approach</a>
+                    <a href="#case-study" class="text-gray-700 hover:text-blue-600 transition-all">Case Study</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-all">Services</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-all">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition-all">About</a>
+            <a href="#approach" class="block py-2 text-gray-700 hover:text-blue-600 transition-all">Approach</a>
+            <a href="#case-study" class="block py-2 text-gray-700 hover:text-blue-600 transition-all">Case Study</a>
+            <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600 transition-all">Services</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-md text-center hover:bg-blue-700 transition-all">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Helping SaaS & Service-Based Businesses Fill Their Pipeline</h1>
+                    <p class="text-xl text-gray-600 mb-8">Stop Guessing, Start Connecting: Generate Qualified Leads Consistently</p>
+                    <div class="flex space-x-4">
+                        <a href="#services" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-all">View Services</a>
+                        <a href="#contact" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-md hover:bg-blue-50 transition-all">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white p-2 rounded-full shadow-xl w-64 h-64 flex items-center justify-center relative group">
+                        <!-- Animated gradient background -->
+                        <div class="absolute inset-0 rounded-full animate-rotate bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 blur-[12px] opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                        
+                        <!-- Main circle container -->
+                        <div class="bg-gray-900 rounded-full w-full h-full flex items-center justify-center relative overflow-hidden">
+                            <!-- Geometric pattern -->
+                            <div class="absolute w-full h-full bg-gradient-to-br from-transparent to-white/10"></div>
+                            <div class="absolute w-32 h-32 bg-purple-500/30 rounded-full blur-lg -top-8 -left-8"></div>
+                            <div class="absolute w-32 h-32 bg-blue-500/30 rounded-full blur-lg -bottom-8 -right-8"></div>
+                            
+                            <!-- Animated core element -->
+                            <div class="relative z-10 animate-pulse">
+                                <div class="w-24 h-24 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                                    <!-- Inner geometric shape -->
+                                    <div class="w-12 h-12 bg-white/90 rounded-lg rotate-45 shadow-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <style>
+                @keyframes rotate {
+                    from { transform: rotate(0deg); }
+                    to { transform: rotate(360deg); }
+                }
+                .animate-rotate {
+                    animation: rotate 4s linear infinite;
+                }
+                @keyframes pulse {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(1.05); }
+                }
+                .animate-pulse {
+                    animation: pulse 3s ease-in-out infinite;
+                }
+                </style>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Hi, I'm Maroun Abdo</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A B2B Lead Generation Expert specializing in Cold Email Outreach
+                </p>
+            </div>
+            
+            <div class="md:flex items-start">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Are you struggling to consistently generate enough qualified leads?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Spending valuable time on outreach that falls flat? I help businesses like yours cut through the noise and connect directly with ideal clients through strategic, highly personalized cold email campaigns.
+                    </p>
+                    <p class="text-gray-600">
+                        My focus is on building genuine connections that lead to booked calls and paying customers, saving you time and maximizing your ROI.
+                    </p>
+                </div>
+                <div class="md:w-1/2 bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">The Challenge: Why Most Cold Email Fails</h3>
+                    <p class="text-gray-600 mb-6">
+                        Generic templates, poorly researched lists, and a lack of personalization mean most cold emails end up ignored or marked as spam. This not only wastes time but can damage your brand's reputation.
+                    </p>
+                    <p class="text-gray-600 font-medium">
+                        Businesses need a smarter, more targeted approach to stand out and get results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My Approach</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Personalization Powers Performance
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-search text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Deep Research</h3>
+                    <p class="text-gray-600">
+                        Understanding your ideal customer profile (ICP) and identifying the right prospects.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-user-edit text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Genuine Personalization</h3>
+                    <p class="text-gray-600">
+                        Finding specific, relevant details about each prospect to craft unique, compelling messages.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-pen-fancy text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Strategic Copywriting</h3>
+                    <p class="text-gray-600">
+                        Writing clear, concise emails that focus on the prospect's needs and offer clear value.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-sync-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Consistent Follow-Up</h3>
+                    <p class="text-gray-600">
+                        Implementing a thoughtful follow-up strategy to maximize response rates.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white p-8 rounded-lg shadow-sm">
+                <p class="text-lg text-gray-700 italic mb-6">
+                    "This approach turns cold outreach from a numbers game into a targeted strategy for building valuable relationships."
+                </p>
+                <div class="flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-quote-right text-blue-600"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium">Maroun Abdo</p>
+                        <p class="text-sm text-gray-500">Cold Email Outreach Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section id="case-study" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Mock Case Study</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Demonstrating the Potential
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-lg mb-10">
+                <p class="text-gray-700 italic">
+                    <i class="fas fa-info-circle text-blue-600 mr-2"></i>
+                    Disclaimer: As I build my client portfolio, this case study simulates a typical campaign to demonstrate my methodology and potential results based on industry best practices. It is for illustrative purposes only.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Client</h3>
+                    <p class="text-gray-600">
+                        Fictional SaaS Company - "Innovate Solutions"
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Challenge</h3>
+                    <p class="text-gray-600">
+                        Needed to book more qualified demos with VPs of Operations in mid-sized tech companies but lacked internal resources for consistent outreach.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Solution</h3>
+                    <p class="text-gray-600">
+                        Targeted, personalized email campaign with strategic follow-ups.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Campaign Details</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-800 mb-3">Targeted List Building</h4>
+                        <p class="text-gray-600">
+                            Developed a list of 100 VPs of Operations at specific tech companies matching the client's ICP using LinkedIn Sales Navigator (simulated).
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-800 mb-3">Deep Personalization</h4>
+                        <p class="text-gray-600">
+                            Researched each prospect and company, identifying recent company news, individual LinkedIn posts, or specific challenges mentioned in job descriptions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="text-lg font-medium text-gray-800 mb-3">Custom Email Sequence</h4>
+                    <p class="text-gray-600 mb-4">
+                        Crafted a 3-step email sequence sent from Innovate Solutions to their prospects:
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="email-template p-6 rounded">
+                            <h5 class="font-medium text-gray-800 mb-2">Email 1 Snippet:</h5>
+                            <p class="text-gray-700 mb-3">
+                                "Hi [Prospect Name], Saw your team's recent work on [Project Mentioned Online] - impressive results! Given your focus on operational efficiency, wanted to share how Innovate Solutions is helping other VPs of Ops streamline project workflows and reporting..."
+                            </p>
+                            <p class="text-sm text-gray-500 font-medium">CTA: Gauge interest.</p>
+                        </div>
+                        
+                        <div class="email-template p-6 rounded">
+                            <h5 class="font-medium text-gray-800 mb-2">Email 2 Snippet:</h5>
+                            <p class="text-gray-700 mb-3">
+                                "Quick follow-up, [Prospect Name]. One user at [Similar Company Type] reduced their team's reporting time by nearly 30% using Innovate Solutions - thought that might resonate..."
+                            </p>
+                            <p class="text-sm text-gray-500 font-medium">CTA: Offer related resource/brief case study link.</p>
+                        </div>
+                        
+                        <div class="email-template p-6 rounded">
+                            <h5 class="font-medium text-gray-800 mb-2">Email 3 Snippet:</h5>
+                            <p class="text-gray-700 mb-3">
+                                "Just checking in one last time, [Prospect Name] - is improving project visibility worth a brief chat sometime next week?"
+                            </p>
+                            <p class="text-sm text-gray-500 font-medium">CTA: Soft ask for call.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium text-gray-800 mb-3">Manual Sending & Tracking</h4>
+                    <p class="text-gray-600">
+                        Emails were sent manually (simulated) and tracked for opens and replies.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Example Results (Illustrative)</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg text-center">
+                        <p class="text-3xl font-bold text-blue-600 mb-2">45%</p>
+                        <p class="text-gray-700">Open Rate</p>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg text-center">
+                        <p class="text-3xl font-bold text-blue-600 mb-2">12%</p>
+                        <p class="text-gray-700">Positive Reply Rate</p>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg text-center">
+                        <p class="text-3xl font-bold text-blue-600 mb-2">12</p>
+                        <p class="text-gray-700">Qualified Leads Generated</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-100 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Key Takeaway</h3>
+                <p class="text-gray-700">
+                    A hyper-personalized approach, sent from the client's domain, significantly outperformed generic outreach, leading to meaningful conversations and pipeline growth.
+                </p>
+            </div>
+            
+            <!-- Placeholder for screenshots -->
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-8 rounded-lg flex items-center justify-center h-64">
+                    <div class="text-center">
+                        <i class="fas fa-envelope text-4xl text-gray-400 mb-3"></i>
+                        <p class="text-gray-500">Example Personalized Email Structure</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-lg flex items-center justify-center h-64">
+                    <div class="text-center">
+                        <i class="fas fa-reply text-4xl text-gray-400 mb-3"></i>
+                        <p class="text-gray-500">Example Positive Reply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Templates Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Example Email Templates</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    My Outreach Style
+                </p>
+            </div>
+            
+            <p class="text-gray-700 mb-12 max-w-3xl mx-auto text-center">
+                The examples below reflect my direct outreach style when connecting with potential clients like you. I adapt this personalized approach when crafting campaigns for my clients.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Template Example 1: Value-Driven Angle</h3>
+                    
+                    <div class="mb-6">
+                        <p class="text-sm font-medium text-gray-500 mb-1">Subject:</p>
+                        <p class="text-gray-800 font-medium">Idea for [Prospect Company Name]'s [Relevant Area - e.g., Client Acquisition]</p>
+                    </div>
+                    
+                    <div class="email-template p-6 rounded">
+                        <p class="text-gray-700 mb-3">Hi [First Name],</p>
+                        <p class="text-gray-700 mb-3">
+                            [Insert Specific, Genuine Personalization - referencing their work, a post, company news, etc.].
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            Given your focus on [Specific Area], I thought you might be interested in a strategy other [Their Industry/Role - e.g., SaaS Founders] are using to generate qualified leads via targeted outreach, without relying solely on [Common Method - e.g., paid ads].
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            I help businesses like yours implement personalized email sequences that consistently book calls. Is pipeline growth something on your radar currently?
+                        </p>
+                        <p class="text-gray-700">Best,</p>
+                        <p class="text-gray-700">Maroun Abdo</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Template Example 2: Problem/Solution Angle</h3>
+                    
+                    <div class="mb-6">
+                        <p class="text-sm font-medium text-gray-500 mb-1">Subject:</p>
+                        <p class="text-gray-800 font-medium">Question about [Specific Challenge they might face] at [Prospect Company Name]</p>
+                    </div>
+                    
+                    <div class="email-template p-6 rounded">
+                        <p class="text-gray-700 mb-3">Hi [First Name],</p>
+                        <p class="text-gray-700 mb-3">
+                            [Insert Specific, Genuine Personalization - showing you understand their context].
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            Many [Their Role - e.g., Agency Owners] I speak with mention the challenge of [Specific Pain Point - e.g., finding high-value clients consistently].
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            I specialize in crafting targeted cold email campaigns focused on [Specific Benefit - e.g., connecting with decision-makers at ideal-fit companies].
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            Could a more predictable lead flow help [Prospect Company Name] achieve its growth goals this quarter?
+                        </p>
+                        <p class="text-gray-700">Best,</p>
+                        <p class="text-gray-700">Maroun Abdo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My Process</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    How We Work Together
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-700 mb-10 text-center">
+                    My goal is to make this seamless for you:
+                </p>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-6 mt-1">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Discovery & Strategy</h3>
+                            <p class="text-gray-600">
+                                We discuss your goals, Ideal Customer Profile (ICP), and value proposition.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-6 mt-1">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Prospect List Building</h3>
+                            <p class="text-gray-600">
+                                I research and build a targeted list of high-quality prospects.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-6 mt-1">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Copywriting & Approval</h3>
+                            <p class="text-gray-600">
+                                I draft personalized email sequences (to be sent from your company domain) for your review and approval.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-6 mt-1">
+                            <span class="font-bold">4</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Campaign Launch & Management</h3>
+                            <p class="text-gray-600">
+                                I execute the outreach campaign using the agreed-upon email account, sending emails and follow-ups.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-6 mt-1">
+                            <span class="font-bold">5</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Tracking & Reporting</h3>
+                            <p class="text-gray-600">
+                                I monitor key metrics (opens, replies, leads) and provide regular updates.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mr-6 mt-1">
+                            <span class="font-bold">6</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Lead Handoff</h3>
+                            <p class="text-gray-600">
+                                Positive replies and leads are forwarded to you promptly for follow-up.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Service Packages</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose the package that best suits your current needs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tier 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Template Pack</h3>
+                        <p class="text-3xl font-bold text-blue-600 mb-2">$50 USD</p>
+                        <p class="text-gray-600">Ideal for DIY outreach or testing copy.</p>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Includes:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">3 Custom Cold Email Templates (Subject + Body) tailored for your outreach to your clients.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Brief guide on personalization best practices.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tier 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md border-2 border-blue-500 transform scale-105 z-10 relative card-hover">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg">
+                        POPULAR
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Outreach Sprint</h3>
+                        <p class="text-3xl font-bold text-blue-600 mb-2">$200 USD</p>
+                        <p class="text-gray-600">Perfect for testing a specific market or offer.</p>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Includes:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Targeted list of ~50 prospects for your business.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Personalized email copy written for the list.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Manual sending of the 50 initial emails over ~1 week (from an email address you provide on your domain).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Basic open/reply tracking & brief end-of-week report.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tier 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Full Campaign Setup & Launch</h3>
+                        <p class="text-3xl font-bold text-blue-600 mb-2">$500 USD</p>
+                        <p class="text-gray-600">Comprehensive solution to fill your pipeline.</p>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Includes:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Strategy session & ICP definition for your business.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Targeted list of ~100-150 prospects.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Personalized multi-step email sequence (initial + 2-3 follow-ups).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Manual campaign execution over ~2-3 weeks (from an email address you provide on your domain).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Detailed tracking & weekly progress updates.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Final summary report with insights.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-6">
+                    (Prices listed in USD. Custom packages available upon request.)
+                </p>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm max-w-2xl mx-auto">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">How Payments Work</h3>
+                    <p class="text-gray-600">
+                        For your convenience and security, payments are processed via Payoneer. Payment terms (e.g., upfront, 50/50) will be agreed upon before starting any project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Ready to Start Generating More Leads?</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Let's connect and discuss how personalized cold email can work for your business
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Contact Me</h3>
+                        <p class="text-gray-600">
+                            Email me directly:
+                        </p>
+                        <a href="mailto:marounabdo.clientoutreach@gmail.com" class="text-blue-600 font-medium text-lg hover:text-blue-700 transition-all">
+                            marounabdo.clientoutreach@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4 text-center">Ask for a Free Mini-Audit</h4>
+                        <p class="text-gray-600 text-center">
+                            Curious about your own current cold emails? Email me with the subject "Mini-Audit Request" and I can offer quick feedback on one of your existing templates.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <p class="text-gray-700 font-medium">
+                            I look forward to hearing from you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold text-white">Maroun Abdo</span>
+                    <p class="text-gray-400 mt-2">Cold Email Outreach Specialist</p>
+                </div>
+                
+                <!--<div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>-->
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 Maroun Abdo. All rights reserved.
+                </p>
+                
+                <!--<div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">Terms of Service</a>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
