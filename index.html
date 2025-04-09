@@ -667,16 +667,62 @@
             </div>
             
             <div class="max-w-3xl mx-auto">
-                <div class="bg-gray-50 p-8 rounded-lg">
-                    <div class="text-center mb-8">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Contact Me</h3>
-                        <p class="text-gray-600">
-                            Email me directly:
-                        </p>
-                        <a href="mailto:marounabdo.clientoutreach@gmail.com" class="text-blue-600 font-medium text-lg hover:text-blue-700 transition-all">
-                            marounabdo.clientoutreach@gmail.com
-                        </a>
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Contact Me</h3>
+                            <p class="text-gray-600">
+                                Email me directly:
+                            </p>
+                            
+                            <!-- Combined mailto + copy button container -->
+                            <div class="inline-flex items-center gap-3 mt-2 bg-white px-4 py-2 rounded-lg border border-gray-200">
+                                <!-- Mailto link -->
+                                <a href="mailto:marounabdo.clientoutreach@gmail.com" 
+                                   class="text-blue-600 font-medium text-lg hover:text-blue-700 transition-all">
+                                    marounabdo.clientoutreach@gmail.com
+                                </a>
+                                
+                                <!-- Copy button -->
+                                <button onclick="copyEmail()" 
+                                        class="text-gray-400 hover:text-blue-600 transition-colors"
+                                        title="Copy email to clipboard">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                
+                            <!-- Copy confirmation message (hidden by default) -->
+                            <p id="copyConfirmation" class="text-sm text-green-600 opacity-0 transition-opacity mt-1">
+                                Email copied to clipboard!
+                            </p>
+                        </div>
                     </div>
+                </div>
+                
+                <script>
+                function copyEmail() {
+                    const email = 'marounabdo.clientoutreach@gmail.com';
+                    
+                    // Copy to clipboard
+                    navigator.clipboard.writeText(email).then(() => {
+                        // Show confirmation message
+                        const confirmation = document.getElementById('copyConfirmation');
+                        confirmation.classList.remove('opacity-0');
+                        confirmation.classList.add('opacity-100');
+                        
+                        // Hide message after 2 seconds
+                        setTimeout(() => {
+                            confirmation.classList.remove('opacity-100');
+                            confirmation.classList.add('opacity-0');
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy email:', err);
+                    });
+                }
+                </script>
                     
                     <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
                         <h4 class="text-lg font-semibold text-gray-800 mb-4 text-center">Ask for a Free Mini-Audit</h4>
